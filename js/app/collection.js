@@ -8,12 +8,12 @@ define([
     'app/model'
 ], function($, _, Backbone, model){
 
-	  var collection = Backbone.Collection.extend({
+    var collection = Backbone.Collection.extend({
 
-	  	model: model
+      model: model
 
-	  });
+    });
 
-	return collection;
+  return collection;
 
 });

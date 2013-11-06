@@ -6,9 +6,9 @@ define([
     'backbone'
 ], function($, _, Backbone){
 
-	  var model = Backbone.Model.extend({
+    var model = Backbone.Model.extend({
 
-	  });
+    });
 
   return model;
 

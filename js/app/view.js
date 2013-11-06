@@ -1,7 +1,7 @@
 'use strict';
 
 define([
-	'jquery',
+  'jquery',
     'underscore',
     'backbone',
     //App Files
@@ -11,28 +11,28 @@ define([
     'text!app/tmpl/template.html'
 ], function($, _, Backbone, model, collection, templateHTML){
 
-	var view = Backbone.View.extend({
+  var view = Backbone.View.extend({
 
-		el: $('#container'),
+    el: $('#container'),
 
-		initialize: function() {
-			this.render();
-		},
+    initialize: function() {
+      this.render();
+    },
 
-		render: function(){
+    render: function(){
 
-			var data = {
-				'name': 'Michael',
-				'role': 'Developer'
-			};
+      var data = {
+        'name': 'Michael',
+        'role': 'Developer'
+      };
 
-			var compiledTemplate = _.template( templateHTML, data );
+      var compiledTemplate = _.template( templateHTML, data );
 
-			this.$el.append( compiledTemplate );
+      this.$el.append( compiledTemplate );
 
-		}
+    }
 
-	});
+  });
 
   return view;
 
